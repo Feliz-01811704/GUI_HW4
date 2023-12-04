@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <title>Multiplication Table</title>
+</head>
+<body>
+
+<form action="#" method="get" id="multiplicationForm" class="number_form">
+  <div class="number_form">
+    <label for="minY">Min Y (-50 to 50)</label>
+    <input type="number" id="minY" name="minY" required />
+  </div>
+
+  <div class="number_form">
+    <label for="maxY">Max Y (-50 to 50) </label>
+    <input type="number" id="maxY" name="maxY" required />
+  </div>
+
+  <div class="number_form">
+    <label for="minX">Min X (-50 to 50)</label>
+    <input type="number" id="minX" name="minX" required />
+  </div>
+
+  <div class="number_form">
+    <label for="maxX">Max X (-50 to 50)</label>
+    <input type="number" id="maxX" name="maxX" required />
+  </div>
+
+  <input type="submit" value="Create Table" />
+</form>
+
+<div id="error"></div>
+
+<div id="table_container">
+  <div id="mult_table"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
